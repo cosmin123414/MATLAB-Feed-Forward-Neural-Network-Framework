@@ -4,9 +4,9 @@
 The implemented neural network has a single hidden layer, but the dimensions of the input, hidden, and output layers can be defined by the user. It uses the ReLU activation function for the hidden layer and the softmax activation function for the output layer. The cost function used for optimization is the Mean Squared Error (MSE).
 
 Example: Handwritten Digit Recognition
-As a demonstration of the capabilities of this FFNN implementation, we have trained it to recognize handwritten digits. A pre-trained model is included in the repository for this purpose.
+As a demonstration of the capabilities of this FFNN implementation, I have trained it to recognize handwritten digits. A pre-trained model is included in the repository for this purpose.
 
-To use the pre-trained model for handwritten digit recognition, you can use the predict method, which takes as arguments the path of an image file and the size to which the image should be resized before processing. The predict method returns the digit that the network predicts is represented in the image.
+To use the pre-trained model for handwritten digit recognition, you can load the model included in the repository, you can then use the predict method, which takes as arguments the path of an image file and the size to which the image should be resized before processing. The predict method returns the digit that the network predicts is represented in the image.
 
 # Training Your Own Models
 You can train your own models using this framework. The train method takes as arguments the input and output data, the learning rate, and the accuracy threshold for stopping training. It performs forward and backward propagation, adjusts the weights and biases of the network using gradient descent, and repeats this process until the accuracy threshold is reached. After training, the test method can be used to evaluate the network's performance on test data.
